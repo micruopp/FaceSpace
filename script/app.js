@@ -38,6 +38,6 @@ function app() {
 			});
 
 	} else {
-		console.log("Run!");
+		console.log("Not a secure context.");
 	}
 }

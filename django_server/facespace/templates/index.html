@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Facespace</title>
+  
+  {% load static %}
+  <link type="text/css" rel="stylesheet" href="{% static 'style/main.css' %}">
+  <script type="text/javascript" src="{% static 'script/app.js' %}"></script>
+</head>
+<body>
+  <div class="container box">
+    <noscript class="noscript box">
+      <p>Javascript is required to use this site. Sorry :(</p>
+      <p>Enable script in your browser and refresh this page.</p>
+    </noscript>
+    <header class="header box">
+      <h1>Facespace</h1>
+    </header>
+    <main class="main box">
+      <div class="video box">
+        <video autoplay playsinline id="selfplayer" class="videoplayer"></video>
+      </div>
+      <div class="video box">
+        <video id="streamplayer" class="videoplayer"></video>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
